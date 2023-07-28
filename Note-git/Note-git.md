@@ -35,4 +35,9 @@
 - ssh-keygen -t rsa -C 邮箱 生成密钥
 - ls -al ~/.ssh
 - ssh -T git@github.com查看是否生成
-- git remote add 仓库名 仓库ssh
+- git remote add 仓库名 仓库sshkey
+- git push [-f] [--set-upstream] [远端名字[本地分支名][:远端分支名]] -f强制覆盖  --set-upstream绑定本地和远端
+- git branch -vv查看本地分支与远端分支之间的关系
+- git clone ssh
+- git fetch [remote name][branch name] 抓取到本地但是不会合并
+- git pull [remote name][branch name] 拉到本地直接合并
