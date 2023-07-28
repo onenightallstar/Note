@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<!-- 文档类型为html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- meta不可见但是机器可读,可以帮助搜索引擎搜索 -->
+    <meta name="description" content="demo">
+    <meta name="keywords" content="demo">
+    <title>DEMO1</title>
+    <style>
+        .cities {
+            background-color:black;
+            color:white;
+            margin:20px;
+            padding:20px;
+        } 
+        /* .后为class 没有.直接改变相应的元素内容 */
+    </style>
+    <title>demo</title>
+    <!-- 定义浏览器工具栏中的标题
+    提供页面被添加到收藏夹时显示的标题
+    显示在搜索引擎结果中的页面标题 -->
+    <base href="http://www.w3school.com.cn/images/" />
+    <base target="_blank" />
+    <!-- 所有链接的目标的默认结果 -->
+    <!-- 不会显示 -->
+</head>
+<!-- 搜索引擎使用标题为您的网页的结构和内容编制索引。 -->
+<body style="background-color: white;"  id="#tt">
+    <p>1</p>
+    <br>
+    <br />
+    <!-- 换行 -->
+    <a href="http:\\www.baidu.com" target="_blank" style="text-align: center">This is a link</a>
+    <hr>
+    <!-- 水平线 -->
+    <a name="tips">基本的注意事项 - 有用的提示</a>
+    <!-- 创建锚 -->
+    <a href="#tips">有用的提示</a>
+    <!-- 指向锚 -->
+    <img src="https://i0.hdslb.com/bfs/banner/0f85825e59d89e8a25408168faaead5bcc0cb74f.jpg@700w_350h_!web-video-right-bottom-ad.webp" alt="">
+    <!-- src使用绝对网站目录  alt为图片无法显示时的替代文字 -->
+
+    <img
+    src="/i/eg_planets.jpg"
+    border="0" usemap="#planetmap"
+    alt="Planets" />
+    <!-- img使用usemap="#1"来调用map  -->
+    <map name="planetmap" id="planetmap">
+    
+        <area
+        shape="circle" 
+        coords="180,139,14"
+        href ="/example/html/venus.html"
+        target ="_blank"
+        alt="Venus" />
+        <!-- coords来代表范围 同时内部可以同<a>一样增加href、target、alt -->
+        
+        
+        </map>
+    
+    <table border="1">
+    <caption>table-demo</caption>
+    <th>一</th>
+    <th>二</th>
+    <tr>
+    <td>1</td>
+    <td>2</td>   
+    </tr>
+    <td>&nbsp;</td>
+    <!-- 使用&nbsp;代表空 -->
+    <td>4</td>
+    </table>
+
+    <ul>
+        <li>coffee</li>
+        <li>milk</li>
+    </ul>
+    <!-- 无序 -->
+    <ol>
+        <li>coffee</li>
+        <li>milk</li>
+    </ol>
+    <!-- 有序 -->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+    <!-- 自定义列表项 dl列表项整体 dt列表项名称 dd列表项定义-->
+    <div class="cities"> 
+        <h2>London</h2>
+        <p>London is the capital city of England. 
+        It is the most populous city in the United Kingdom, 
+        with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+    <!-- 使用<div class=""></div>可以实现块内显示 -->
+    <!-- 同理使用span可以实现内联显示 -->
+    <a href="#tt">跳转到顶部</a>
+    <iframe src="/example/html/demo_iframe.html" name="iframe_a"></iframe>
+    <p><a href="http://www.w3school.com.cn" target="iframe_a">W3School.com.cn</a></p>
+    <!-- 内嵌网页  通过target可以将目标网站显示到iframe中-->
+</body>
+</html>
+
+<!-- 浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。
+需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。 -->
+
+<!-- 块元素<div> 通常以新行开始或结束  内联元素<span>相反 -->
+
+<!-- #号后跟的即为id,id对大小写敏感,html对大小写不敏感 -->
